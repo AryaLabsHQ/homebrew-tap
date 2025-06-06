@@ -11,7 +11,7 @@ class Agentree < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.0.0/agentree_Darwin_x86_64.tar.gz"
-      sha256 "931176b1770ab13118506a57e6bdf099e258cdffec7d422342751bfa4b616264"
+      sha256 "0ae2c7269cb36e28df5119baa420dc76e919b7b602a20bfedfbef19c13832b0a"
 
       def install
         bin.install "agentree"
@@ -19,7 +19,7 @@ class Agentree < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.0.0/agentree_Darwin_arm64.tar.gz"
-      sha256 "fa5680f9be2d38b959423663090a6b36338997150fe447ffe9068ef723748125"
+      sha256 "55867e8d1bb5c64bc66f586f21ff193a11fe4b13bed2f307c7536df0de55295a"
 
       def install
         bin.install "agentree"
@@ -30,14 +30,14 @@ class Agentree < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.0.0/agentree_Linux_x86_64.tar.gz"
-      sha256 "ec842436d670ed62b6ccd0d712b32a90d4f52120a7b48bf3284e1848ca52368e"
+      sha256 "09df3ca7693c90b466a2d75eca5d091fe80c56f580621b70f3c6b994da80aa00"
       def install
         bin.install "agentree"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.0.0/agentree_Linux_arm64.tar.gz"
-      sha256 "d7659fe76bb856667e8d3fa3604d10b4bbb061d810e531ea4af090d87d18ab33"
+      sha256 "57d92f8ac5e06bcc61da1510d98d4f621841d9519bed445dae20e3721891ed69"
       def install
         bin.install "agentree"
       end
