@@ -6,15 +6,15 @@ This is the official Homebrew tap for AryaLabs tools.
 
 ```bash
 brew tap AryaLabsHQ/tap
-brew install hatch
+brew install AryaLabsHQ/tap/agentree
 ```
 
 ## Available Formulas
 
-### hatch
+### agentree
 Create and manage isolated Git worktrees for AI coding agents.
 
-- **Repository**: https://github.com/AryaLabsHQ/hatch
+- **Repository**: https://github.com/AryaLabsHQ/agentree
 - **Description**: Simplifies working with multiple AI coding agents by creating isolated branches and directories for concurrent work without conflicts.
 
 ## Updates
