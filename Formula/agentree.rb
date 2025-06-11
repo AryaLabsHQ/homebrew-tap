@@ -5,21 +5,21 @@
 class Agentree < Formula
   desc "Create and manage isolated Git worktrees for AI coding agents"
   homepage "https://github.com/AryaLabsHQ/agentree"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.1.0/agentree_Darwin_x86_64.tar.gz"
-      sha256 "e2aaf1d5bfc2d6ce033c29c7fcbaeeac9896c8d70870917be382d68a713f7ec5"
+      url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.2.0/agentree_Darwin_x86_64.tar.gz"
+      sha256 "a3864f2b685c04e6b8f823b5dc292369f6401de7ee3dcf5c95438ce91b50cb44"
 
       def install
         bin.install "agentree"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.1.0/agentree_Darwin_arm64.tar.gz"
-      sha256 "b4c92248590b2805cbfc541269083a148a890fd660f5b2650dc3f8869ee35529"
+      url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.2.0/agentree_Darwin_arm64.tar.gz"
+      sha256 "766f2c7526117a52d0f82c1ba1ae284ac31a9d825d674d9de1c2fd97f4da4c25"
 
       def install
         bin.install "agentree"
@@ -29,15 +29,15 @@ class Agentree < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.1.0/agentree_Linux_x86_64.tar.gz"
-      sha256 "83e9dc360603159ed508ce29cb7ad330f7e6ef5bb6de463d04bf444c0bc78556"
+      url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.2.0/agentree_Linux_x86_64.tar.gz"
+      sha256 "524dd1fd6cc37c8234d828f746787dabf068cd33c9eafa2352cb361409fd366a"
       def install
         bin.install "agentree"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.1.0/agentree_Linux_arm64.tar.gz"
-      sha256 "7574c585e1967d325e4cf637fc0f5c472b7c1936877c5508fe9f271d57eb65fc"
+      url "https://github.com/AryaLabsHQ/agentree/releases/download/v1.2.0/agentree_Linux_arm64.tar.gz"
+      sha256 "ea28d08be16124c1a0320be2547b1f0b13391ec79b717e2fe14625c717a46ff1"
       def install
         bin.install "agentree"
       end
